@@ -7,11 +7,49 @@
     <title>conradfulbrookdesign</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/cfd.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;1,300&family=Work+Sans:wght@100;300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="title">
+        conradfulbrookdesign
+    </div>
+    <nav>
+        <ul style="list-style-type: none; margin-left: -40px; display: flex; flex-wrap: wrap;">
+            {{ nav include_home="true" }}
+              <li style="margin-left: 30px;">
+                <a href="{{ url }}"{{ if is_current || is_parent }} class="current"{{ /if }}>
+                  {{ title }}
+                </a>
+              </li>
+            {{ /nav }}
+          </ul>
+    </nav>
+    <div class="container-fluid" style="padding-top: 96px;">
         <div class="row">
-            <div class="col-sm-6" style="background-color: red;"></div>
+            <div class="col-sm-12">
+                {{collection:work}}
+                    <a href="{{url}}">
+                        <div class="workcard">
+                            <div class="row flex {{ switch between='flex-row|flex-row-reverse' }}">
+                                <div class="col-sm-4" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding:90px;">
+                                    <h1>{{title}}</h1>
+                                    <div class="tags">
+                                        {{type_of_work}}
+                                            <span class="tag">{{title}}</span>
+                                        {{/type_of_work}}
+                                    </div>
+                                    <p>{{card_blurb}}</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <img src="{{main_image}}" width="100%" alt="{{title}}">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                {{/collection:work}}
+            </div>
         </div>
     </div>
 </body>
