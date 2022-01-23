@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACD,gBAAgB,ECDT,OAAO",
+"sources": ["../../resources/sass/elements.scss","../../resources/sass/colors.scss"],
+"names": [],
+"file": "cfd.css"
+}
