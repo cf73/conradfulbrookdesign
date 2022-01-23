@@ -12,3 +12,12 @@ h1 {
     line-height: 64px;
     margin-bottom: 10px;
 }
+a {
+    color: $softblack;
+    padding-bottom: 6px;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+        background-color: lemonchiffon;
+    }
+}

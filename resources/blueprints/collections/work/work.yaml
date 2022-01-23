@@ -11,6 +11,16 @@ sections:
           validate:
             - required
       -
+        handle: role
+        field:
+          input_type: text
+          antlers: false
+          display: Role
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
         handle: card_blurb
         field:
           antlers: false
@@ -38,6 +48,33 @@ sections:
           display: 'Main image'
           type: assets
           icon: assets
+          listable: hidden
+          instructions_position: above
+      -
+        handle: large_intro_text
+        field:
+          always_show_set_button: false
+          buttons:
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - anchor
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: 'Large intro text'
+          type: bard
+          icon: bard
           listable: hidden
           instructions_position: above
       -
@@ -71,7 +108,7 @@ sections:
           collapse: false
           sets:
             content:
-              display: Content
+              display: Text
               fields:
                 -
                   handle: text
@@ -101,6 +138,9 @@ sections:
                     icon: bard
                     listable: hidden
                     instructions_position: above
+            image:
+              display: Image
+              fields:
                 -
                   handle: image
                   field:
@@ -127,3 +167,11 @@ sections:
         field:
           type: slug
           localizable: true
+      -
+        handle: type_of_work
+        field:
+          type: terms
+          taxonomies:
+            - type_of_work
+          display: 'Type of Work'
+          mode: select

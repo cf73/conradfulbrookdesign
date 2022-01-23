@@ -12,9 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;1,300&family=Work+Sans:wght@100;300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="title">
-        conradfulbrookdesign
-    </div>
+    
+        <div class="title">
+            <a href="/">
+            conradfulbrookdesign
+        </a>
+
+        </div>
     <nav>
         <ul style="list-style-type: none; margin-left: -40px; display: flex; flex-wrap: wrap;">
             {{ nav include_home="true" }}
@@ -27,30 +31,7 @@
           </ul>
     </nav>
     <div class="container-fluid" style="padding-top: 96px;">
-        <div class="row">
-            <div class="col-sm-12">
-                {{collection:work}}
-                    <a href="{{url}}">
-                        <div class="workcard">
-                            <div class="row flex {{ switch between='flex-row|flex-row-reverse' }}">
-                                <div class="col-sm-4" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding:90px;">
-                                    <h1>{{title}}</h1>
-                                    <div class="tags">
-                                        {{type_of_work}}
-                                            <span class="tag">{{title}}</span>
-                                        {{/type_of_work}}
-                                    </div>
-                                    <p>{{card_blurb}}</p>
-                                </div>
-                                <div class="col-sm-8">
-                                    <img src="{{main_image}}" width="100%" alt="{{title}}">
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                {{/collection:work}}
-            </div>
-        </div>
+        {{template_content}}
     </div>
 </body>
 </html>

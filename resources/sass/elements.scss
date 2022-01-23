@@ -1,9 +1,23 @@
 body {
     background-color: $ceramic;
 }
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 90px auto;
+    padding: 0 60px;
+}
 .workcard {
     display: flex;
     flex-direction: row;
+    padding-top: 30px;
+}
+.workcard-small {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
 }
 .tags {
     display: flex;
@@ -24,7 +38,16 @@ body {
     transform: rotate(-90deg);
     position: fixed;
     left: -45px;
-    top: 100px;
+    top: 88px;
+    z-index: 9999;
+    padding: 12px 0;
+    & a {
+        color: $softblack;
+        padding-bottom: 6px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 nav {
     height: 96px;

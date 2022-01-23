@@ -1,5 +1,5 @@
 title: Work
-template: work
+template: '@blueprint'
 layout: layout
 taxonomies:
   - type_of_work
