@@ -13,8 +13,12 @@ a {
   padding-bottom: 6px; }
   a:hover {
     text-decoration: none;
-    color: inherit;
-    background-color: lemonchiffon; }
+    color: inherit; }
+
+p a {
+  text-decoration: underline; }
+  p a:hover {
+    text-decoration: underline; }
 
 body {
   background-color: #FAFBF9; }
@@ -24,7 +28,8 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 90px auto;
-  padding: 0 60px; }
+  padding: 0 60px;
+  border-top: solid thin lightgrey; }
 
 .workcard {
   display: flex;

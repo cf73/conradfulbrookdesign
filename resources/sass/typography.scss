@@ -18,6 +18,11 @@ a {
     &:hover {
         text-decoration: none;
         color: inherit;
-        background-color: lemonchiffon;
     }
+}
+p  a {
+    text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+        }
 }

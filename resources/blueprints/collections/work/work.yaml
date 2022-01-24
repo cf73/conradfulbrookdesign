@@ -30,11 +30,16 @@ sections:
           listable: hidden
           instructions_position: above
       -
-        handle: main_video
+        handle: movie
         field:
-          display: 'Main Video'
-          type: video
-          icon: video
+          mode: list
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Movie
+          type: assets
+          icon: assets
           listable: hidden
           instructions_position: above
       -
@@ -84,6 +89,10 @@ sections:
           buttons:
             - bold
             - italic
+            - underline
+            - strikethrough
+            - unorderedlist
+            - orderedlist
             - removeformat
             - anchor
           save_html: false

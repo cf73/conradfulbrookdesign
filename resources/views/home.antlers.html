@@ -8,15 +8,13 @@
         <h1>london-bred</h1>
         <h1>boston-based</h1>
         <h1>coffee-fueled</h1>
-        <h1>design</h1>
+        <h1>Design</h1>
     </div>
 </div>
 
-<video src="" width="100%" height="500px" style="background-color: grey; margin-top: 60px;"></video>
-
 <div class="row">
     <div class="col-sm-12">
-        {{collection:work}}
+        {{collection:work sort="order"}}
             
                 <div class="workcard">
                     <div class="row flex {{ switch between='flex-row|flex-row-reverse' }}">
@@ -29,12 +27,12 @@
                                     <span class="tag">{{title}}</span>
                                 {{/type_of_work}}
                             </div>
-                            <p style="font-weight: 700;">{{role}}</p>
-
                             <p>{{card_blurb}}</p>
                         </div>
                         <div class="col-sm-8">
-                            <img src="{{main_image}}" width="100%" alt="{{title}}">
+                            <a href="{{url}}">
+                                <img src="{{main_image}}" width="100%" alt="{{title}}">
+                            </a>
                         </div>
                     </div>
                 </div>
