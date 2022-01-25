@@ -13,12 +13,17 @@ body {
     display: flex;
     flex-direction: row;
     padding-top: 30px;
+    margin-bottom: 30px;
 }
 .workcard-small {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+    & img {
+        max-height: 250px;
+        width: auto;
+    }
 }
 .tags {
     display: flex;

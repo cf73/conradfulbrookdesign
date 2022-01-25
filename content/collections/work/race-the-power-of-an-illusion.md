@@ -11,10 +11,12 @@ intro_blurb:
         type: text
         text: 'Intro blurb here'
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1642912439
+updated_at: 1643066677
 type_of_work:
   - identity
   - website
   - cms
 role: Freelance
+coming_soon: true
+card_blurb: 'An online companion to the award-winning documentary series by California Newsreel'
 ---

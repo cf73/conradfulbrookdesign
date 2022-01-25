@@ -11,6 +11,15 @@ sections:
           validate:
             - required
       -
+        handle: coming_soon
+        field:
+          default: false
+          display: 'Coming Soon'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+      -
         handle: role
         field:
           input_type: text
@@ -53,6 +62,15 @@ sections:
           display: 'Main image'
           type: assets
           icon: assets
+          listable: hidden
+          instructions_position: above
+      -
+        handle: hide_main_image
+        field:
+          default: false
+          display: 'Hide main image?'
+          type: toggle
+          icon: toggle
           listable: hidden
           instructions_position: above
       -
@@ -184,3 +202,12 @@ sections:
             - type_of_work
           display: 'Type of Work'
           mode: select
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - work
+          max_items: 1
+          listable: false
+          localizable: true

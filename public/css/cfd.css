@@ -5,7 +5,13 @@ body {
 h1 {
   font-family: "Cormorant", serif;
   font-size: 64px;
-  line-height: 64px;
+  line-height: 70px;
+  margin-bottom: 10px; }
+
+h2 {
+  font-family: "Cormorant", serif;
+  font-size: 36px;
+  line-height: 48px;
   margin-bottom: 10px; }
 
 a {
@@ -34,13 +40,17 @@ body {
 .workcard {
   display: flex;
   flex-direction: row;
-  padding-top: 30px; }
+  padding-top: 30px;
+  margin-bottom: 30px; }
 
 .workcard-small {
   width: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 30px; }
+  .workcard-small img {
+    max-height: 250px;
+    width: auto; }
 
 .tags {
   display: flex;

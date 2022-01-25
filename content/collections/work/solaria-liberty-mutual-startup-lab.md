@@ -1,7 +1,7 @@
 ---
 id: 3438592b-a99b-4e13-a827-504fd75a1e46
 blueprint: work
-title: 'Solaria (Liberty Mutual startup lab)'
+title: 'Solaria (Liberty Mutual)'
 role: 'Lead Designer (agency)'
 card_blurb: 'I led a team to create the digital product for an all-new insurance company, Solaria, based out of Liberty Mutual.'
 main_image: Certainly.png
@@ -31,5 +31,13 @@ more_content:
     type: image
     enabled: true
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1643062095
+updated_at: 1643087837
+coming_soon: false
+hide_main_image: false
+type_of_work:
+  - ux-ui
+  - ia
+  - identity
+  - research
+  - lean-ux
 ---
