@@ -1,32 +1,4 @@
 body {
-  color: #262626;
-  font-family: "Work Sans", sans-serif; }
-
-h1 {
-  font-family: "Cormorant", serif;
-  font-size: 64px;
-  line-height: 70px;
-  margin-bottom: 10px; }
-
-h2 {
-  font-family: "Cormorant", serif;
-  font-size: 36px;
-  line-height: 48px;
-  margin-bottom: 10px; }
-
-a {
-  color: #262626;
-  padding-bottom: 6px; }
-  a:hover {
-    text-decoration: none;
-    color: inherit; }
-
-p a {
-  text-decoration: underline; }
-  p a:hover {
-    text-decoration: underline; }
-
-body {
   background-color: #FAFBF9; }
 
 .work {
@@ -34,15 +6,30 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 90px auto;
-  padding: 0 60px;
   border-top: solid thin lightgrey; }
 
+@media only screen and (min-width: 768px) {
+  .work {
+    padding: 0 60px; } }
 .workcard {
   display: flex;
   flex-direction: row;
   padding-top: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 90px; }
 
+.workcard-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+@media only screen and (min-width: 576px) {
+  .workcard-details {
+    padding: 0 60px; } }
+@media only screen and (min-width: 1400px) {
+  .workcard-details {
+    padding: 0 90px; } }
 .workcard-small {
   width: 100%;
   display: flex;
@@ -50,14 +37,17 @@ body {
   padding-top: 30px; }
   .workcard-small img {
     max-height: 250px;
-    width: auto; }
+    width: 100%; }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   justify-content: center; }
 
+@media only screen and (min-width: 768px) {
+  .tags {
+    margin-bottom: 24px; } }
 .tag {
   display: inline-block;
   padding: 3px 10px;
@@ -100,5 +90,38 @@ nav {
       color: red;
       text-decoration: none;
       border-bottom: solid thin red; }
+
+body {
+  color: #262626;
+  font-family: "Work Sans", sans-serif; }
+
+h1 {
+  font-family: "Cormorant", serif;
+  font-size: 42px;
+  line-height: 48px;
+  margin-bottom: 10px; }
+
+h2 {
+  font-family: "Cormorant", serif;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 10px; }
+
+a {
+  color: #262626;
+  padding-bottom: 6px; }
+  a:hover {
+    text-decoration: none;
+    color: inherit; }
+
+p a {
+  text-decoration: underline; }
+  p a:hover {
+    text-decoration: underline; }
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 64px;
+    line-height: 70px; } }
 
 /*# sourceMappingURL=cfd.css.map */

@@ -1,3 +1,10 @@
+//breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
 body {
     background-color: $ceramic;
 }
@@ -6,14 +13,35 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     margin: 90px auto;
-    padding: 0 60px;
     border-top: solid thin lightgrey;
+}
+@media only screen and (min-width: $md) {
+    .work { 
+        padding: 0 60px;
+    }
 }
 .workcard {
     display: flex;
     flex-direction: row;
     padding-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
+}
+.workcard-details {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+@media only screen and (min-width: $sm) {
+    .workcard-details { 
+        padding: 0 60px;
+    }
+}
+@media only screen and (min-width: $xxl) {
+    .workcard-details { 
+        padding: 0 90px;
+    }
 }
 .workcard-small {
     width: 100%;
@@ -22,14 +50,19 @@ body {
     padding-top: 30px;
     & img {
         max-height: 250px;
-        width: auto;
+        width: 100%;
     }
 }
 .tags {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
     justify-content: center;
+}
+@media only screen and (min-width: $md) {
+    .tags { 
+        margin-bottom: 24px;
+    }
 }
 .tag {
     display: inline-block;

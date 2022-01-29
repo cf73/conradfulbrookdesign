@@ -8,8 +8,8 @@ body {
 
 h1 {
     font-family: $serif;
-    font-size: 64px;
-    line-height: 70px;
+    font-size: 42px;
+    line-height: 48px;
     margin-bottom: 10px;
 }
 h2 {
@@ -31,4 +31,11 @@ p  a {
         &:hover {
             text-decoration: underline;
         }
+}
+
+@media only screen and (min-width: $md) {
+    h1 { 
+        font-size: 64px;
+        line-height: 70px;
+    }
 }
