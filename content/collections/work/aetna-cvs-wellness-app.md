@@ -8,7 +8,7 @@ movie: Wellness-app.mp4
 main_image: wellness-app-hero.jpg
 hide_main_image: true
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1643089024
+updated_at: 1643486535
 large_intro_text:
   -
     type: paragraph
@@ -23,4 +23,9 @@ intro_blurb:
       -
         type: text
         text: 'In a tight three week timeframe, I architected and designed this app, with iterative working sessions with the client, and created this short video demoing it to allow the teams to continue to sell the concept internally with other stakeholders.'
+type_of_work:
+  - design-thinking
+  - ia
+  - interaction-design
+  - ux-ui
 ---
