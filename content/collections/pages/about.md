@@ -4,7 +4,7 @@ blueprint: about
 template: about
 title: About
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1643486253
+updated_at: 1643680619
 about_text:
   -
     type: paragraph
