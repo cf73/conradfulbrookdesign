@@ -79,8 +79,8 @@ intro_blurb:
         type: text
         text: 'Future plans include more visual refinement and a full eCommerce solution.'
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1643054895
-card_blurb: "Fidelis is a leading importer, distributor and retailer of high-end 'audiophile' equipment, based in\L Nashua, NH"
+updated_at: 1685936822
+card_blurb: 'Fidelis is a leading importer, distributor and retailer of high-end ''audiophile'' equipment, based in Nashua, NH'
 type_of_work:
   - identity
   - ux-ui
@@ -112,4 +112,6 @@ more_content:
     image: Fidelis2.png
     type: image
     enabled: true
+coming_soon: false
+hide_main_image: false
 ---

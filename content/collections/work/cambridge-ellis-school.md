@@ -2,7 +2,7 @@
 id: 441fa925-37df-42c7-ac02-5853eaaf6ed3
 blueprint: work
 title: 'Cambridge Ellis School'
-main_image: CES3-1643041284.png
+main_image: CES.png
 intro_blurb:
   -
     type: paragraph
@@ -73,7 +73,7 @@ type_of_work:
   - website
   - cms
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1643044676
+updated_at: 1685938839
 card_blurb: 'Identity and fully-custom website and CMS for Cambridge, MA preschool'
 role: Freelance
 large_intro_text:
@@ -85,6 +85,10 @@ large_intro_text:
         text: 'With admissions season fast approaching and their old Wordpress site falling apart at the seams — code snippets showing on the front end, plugins no-longer supported, a staff directory page that could no longer be updated, and a mobile-unfriendly design — Cambridge Ellis preschool urgently needed a new site that was intuitive for busy school admin to edit while representing the school''s unique identity and culture.'
 more_content:
   -
+    image: CES2-1685938784.png
+    type: image
+    enabled: true
+  -
     type: image
     enabled: true
     image: CES-Color-Palette-1643040784.png
@@ -93,15 +97,17 @@ more_content:
     type: image
     enabled: true
   -
-    image: CES-Responsive.png
+    image: CES2.png
     type: image
     enabled: true
   -
-    image: CES2.png
+    image: CES-Responsive.png
     type: image
     enabled: true
   -
     image: CES1.png
     type: image
     enabled: true
+coming_soon: false
+hide_main_image: false
 ---

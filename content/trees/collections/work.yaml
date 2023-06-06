@@ -1,9 +1,5 @@
 tree:
   -
-    entry: e98fee95-226f-4fe7-a1ed-2f614d3a41f6
-  -
-    entry: b4c2ddf2-b451-4bc9-b275-782c5ddecd46
-  -
     entry: 253f4f06-4fb0-4706-bc3b-fe174f3cde44
   -
     entry: 78eddb77-9007-4d97-9b68-482fa5834e35
@@ -12,7 +8,11 @@ tree:
   -
     entry: 60f0d99a-57f2-4711-98a6-1b1bd3cf9ddf
   -
+    entry: b4c2ddf2-b451-4bc9-b275-782c5ddecd46
+  -
     entry: 3438592b-a99b-4e13-a827-504fd75a1e46
+  -
+    entry: e98fee95-226f-4fe7-a1ed-2f614d3a41f6
   -
     entry: 441fa925-37df-42c7-ac02-5853eaaf6ed3
   -
