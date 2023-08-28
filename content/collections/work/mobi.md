@@ -7,7 +7,7 @@ role: 'VP of Design'
 card_blurb: 'Mobi was an urban mobility startup based out of MIT and located in Cambridge, MA. This project was a concept iOS app designed to demonstrate Mobi''s multi-modal routing capabilities.'
 movie: mobi.mp4
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1643089213
+updated_at: 1692821197
 main_image: mobi-app.png
 large_intro_text:
   -
@@ -22,4 +22,6 @@ type_of_work:
   - ux-ui
   - ia
   - interaction-design
+  - prototyping
+type: Professional
 ---

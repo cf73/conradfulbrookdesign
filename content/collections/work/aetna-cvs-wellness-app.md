@@ -8,7 +8,7 @@ movie: Wellness-app.mp4
 main_image: wellness-app-hero.jpg
 hide_main_image: true
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1643486535
+updated_at: 1692821125
 large_intro_text:
   -
     type: paragraph
@@ -28,4 +28,6 @@ type_of_work:
   - ia
   - interaction-design
   - ux-ui
+  - prototyping
+type: Professional
 ---

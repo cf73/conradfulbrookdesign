@@ -6,11 +6,12 @@ coming_soon: false
 card_blurb: 'Online portfolio design and build for this London-based artist and teacher'
 hide_main_image: false
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1685933271
+updated_at: 1693075792
 main_image: Artist-Website.png
 type_of_work:
   - graphic-design
   - ux-ui
   - interaction-design
   - cms
+type: Freelance
 ---

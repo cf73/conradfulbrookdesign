@@ -2,7 +2,7 @@
 id: 8cb3f043-7e81-47a1-a0ad-408e48a1f1fe
 blueprint: work
 title: Fidelis
-main_image: Fidelis.png
+main_image: FidelisAV1.jpg
 intro_blurb:
   -
     type: paragraph
@@ -79,7 +79,7 @@ intro_blurb:
         type: text
         text: 'Future plans include more visual refinement and a full eCommerce solution.'
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1685936822
+updated_at: 1693164418
 card_blurb: 'Fidelis is a leading importer, distributor and retailer of high-end ''audiophile'' equipment, based in Nashua, NH'
 type_of_work:
   - identity
@@ -87,6 +87,7 @@ type_of_work:
   - ia
   - website
   - cms
+  - front-end-code
 role: Freelance
 large_intro_text:
   -
@@ -114,4 +115,5 @@ more_content:
     enabled: true
 coming_soon: false
 hide_main_image: false
+type: Freelance
 ---

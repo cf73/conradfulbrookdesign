@@ -6,8 +6,8 @@ coming_soon: false
 card_blurb: 'Website and identity for a bespoke high-end audiophile cable manufacturer'
 hide_main_image: false
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1685934047
-main_image: ArgentPur.png
+updated_at: 1693164654
+main_image: ArgentPur1.jpg
 more_content:
   -
     image: ArgentPur2.png
@@ -27,4 +27,5 @@ type_of_work:
   - cms
   - website
   - photography
+type: Freelance
 ---

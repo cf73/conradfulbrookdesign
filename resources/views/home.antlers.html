@@ -1,48 +1,92 @@
-<div class="row" style="margin-bottom: 96px; margin-top: 96px; text-align: center;">
+<!-- <div class="row" style="margin-bottom: 96px; margin-top: 96px; text-align: center;">
     <div class="col-sm-10 offset-sm-1">
         <h1><nobr>strategically-aligned,</nobr> <nobr>experience-centered,</nobr> <nobr>empathy-driven</nobr> product design for change</h1>
     </div>
-</div>
+</div> -->
 
-<div class="row">
-    <div class="col-sm-12">
-        {{collection:work sort="order"}}
-            
-                <div class="workcard">
-                    <div class="row flex {{ switch between='flex-row|flex-row-reverse' }}">
-                        <div class="col-sm-12 col-xl-8 order-xl-2">
-                            {{if coming_soon}}
-                            <img src="{{main_image}}" width="100%" alt="{{title}}">
-                            {{else}}
-                            <a href="{{url}}">
-                                <img src="{{main_image}}" width="100%" alt="{{title}}">
-                            </a>
-                            {{/if}}
-                        </div>
-                        <div class="col-sm-12 col-xl-4 workcard-details">
-                            {{if coming_soon}}
-                                <h1>{{title}}</h1>
-                                <div class="tags">
-                                    {{type_of_work}}
-                                        <span class="tag">{{title}}</span>
-                                    {{/type_of_work}}
-                                </div>
-                                <p>{{card_blurb}}</p>
-                                <p style="color: #d10707; font-weight: 700;">Coming Soon</p>
-                            {{else}}
-                                <a href="{{url}}">
-                                    <h1>{{title}}</h1>
-                                </a>
-                                <div class="tags">
-                                    {{type_of_work}}
-                                        <span class="tag">{{title}}</span>
-                                    {{/type_of_work}}
-                                </div>
-                                <p>{{card_blurb}}</p>
-                            {{/if}}
-                        </div>
+<header style="padding: 60px; position: fixed; display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 90px; height: 83vh">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="/">
+                    <h2>Conrad Fulbrook</h2>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3><a href="#"><i class="las la-file-download"></i> Résumé</a></h3>
+                <h3><a href="https://www.linkedin.com/in/conrad-fulbrook-59b09999/"><i class="lab la-linkedin"></i> LinkedIn</a></h3>
+                <h3><i class="las la-phone"></i> (857) 654 3985</h3>
+                <h3><i class="las la-envelope"></i> cfulbroo@alumni.risd.edu</h3>
+            </div>
+            <div class="col-md-6">
+                <div style="display: flex; height: 100%; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h4>BA, English Literature</h4>
+                        <h2>Cambridge University</h2>
+                    </div>
+                    <div>
+                        <h4>MFA, Graphic Design</h4>
+                        <h2>Rhode Island School of Design</h2>
                     </div>
                 </div>
-        {{/collection:work}}
+            </div>
+        </div>
     </div>
-</div>
+    
+    <div>
+        <p class="large">Product designer director passionate about high-impact innovation for social uplift.</p>
+        <p style="max-width: 61%;">Fintech, SaaS, medical, and arts & cultural practice to improve peoples' lives at scale, through the applied humanism of modern technology and design.</p>
+    </div>
+    
+</header>
+
+<section id="content">   
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><h3>Full Time</h3></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><h3>Freelance</h3></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"><h3>Teaching</h3></button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    {{collection:work sort="order" type:is="professional" }}
+                        <div class="col-sm-4">
+                            {{partial:workcard}}
+                        </div>
+                    {{/collection:work}}
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    {{collection:work sort="order" type:is="freelance" }}
+                        <div class="col-sm-4">
+                            {{partial:workcard}}
+                        </div>
+                    {{/collection:work}}
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    {{collection:work sort="order" type:is="teaching" }}
+                        <div class="col-sm-4">
+                            {{partial:workcard}}
+                        </div>
+                    {{/collection:work}}
+                </div>
+            </div>
+        </div>
+    </div>               
+</section>

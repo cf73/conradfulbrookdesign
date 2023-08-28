@@ -2,7 +2,7 @@
 id: 441fa925-37df-42c7-ac02-5853eaaf6ed3
 blueprint: work
 title: 'Cambridge Ellis School'
-main_image: CES.png
+main_image: CES1.jpg
 intro_blurb:
   -
     type: paragraph
@@ -72,8 +72,9 @@ type_of_work:
   - ia
   - website
   - cms
+  - front-end-code
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1685938839
+updated_at: 1693164242
 card_blurb: 'Identity and fully-custom website and CMS for Cambridge, MA preschool'
 role: Freelance
 large_intro_text:
@@ -110,4 +111,5 @@ more_content:
     enabled: true
 coming_soon: false
 hide_main_image: false
+type: Freelance
 ---

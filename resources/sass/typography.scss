@@ -1,22 +1,53 @@
+
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/bw-gradual-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BwGradualBold';
+    src: url('/fonts/bw-gradual-bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BwGradualBlack';
+    src: url('/fonts/bw-gradual-black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $serif: 'Cormorant', serif;
-$sans: 'Work Sans', sans-serif;
+$sans: 'BwGradual', sans-serif;
+$bold: 'BwGradualBold', sans-serif;
+$black: 'BwGradualBlack';
 
 body {
-    color: $softblack;
+    color: $eco_strong;
     font-family: $sans;
 }
 
 h1 {
-    font-family: $serif;
+    font-family: $sans;
     font-size: 42px;
     line-height: 48px;
     margin-bottom: 10px;
 }
 h2 {
-    font-family: $serif;
+    font-family: $bold;
     font-size: 36px;
-    line-height: 48px;
-    margin-bottom: 10px;
+    line-height: 36px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 42px;
+}
+h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 a {
     color: $softblack;
@@ -25,6 +56,18 @@ a {
         text-decoration: none;
         color: inherit;
     }
+}
+.large {
+    font-size: 96px;
+    line-height: 105px;
+    font-family: $bold;
+}
+.black {
+    font-family: $black;
+}
+p {
+    font-size: 21px;
+    line-height: 28px;
 }
 p  a {
     text-decoration: underline;

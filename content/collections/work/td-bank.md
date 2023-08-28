@@ -3,12 +3,12 @@ id: f46f619f-41f4-42ec-baf3-80246940ed84
 blueprint: work
 title: 'TD Bank'
 coming_soon: false
-card_blurb: 'Redesign of TD Bank''s online banking system'
+card_blurb: 'Redesign of TD Bank''s online banking system to encourage financial wellness.'
 movie: TD-Bank.mp4
 main_image: TD-Bank.png
 hide_main_image: true
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1658939294
+updated_at: 1693252540
 large_intro_text:
   -
     type: paragraph
@@ -22,4 +22,5 @@ type_of_work:
   - ux-ui
   - saas
   - interaction-design
+type: Professional
 ---

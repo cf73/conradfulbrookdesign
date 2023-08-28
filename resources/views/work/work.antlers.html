@@ -1,63 +1,72 @@
-<div class="row" style="margin: 60px 0;">
-    <div class="col-sm-6 offset-sm-1">
-        <h1>{{title}}</h1>
-    </div>
-    <div class="col-sm-3 offset-sm-1">{{card_blurb}}</div>
-</div>
+<p class="spacer large">{{card_blurb}}</p>
 
-{{if movie}}
-<div class="row" style="margin-bottom: 30px;">
-    <div class="col-sm-10 offset-sm-1">
-        <video src="{{movie}}" width="100%" autoplay loop></video>
+<div class="grid-container">
+    <div class="grid-item">
+        <h1 class="spacer">{{title}}</h1>
+        <div class="tags">
+            {{type_of_work}}
+                <span class="tag">{{title}}</span>
+            {{/type_of_work}}
+        </div>
     </div>
-</div>
-{{/if}}
-
-{{if hide_main_image}}
-{{else}}
-<div class="row">
-    <div class="col-md-10 offset-md-1"><img src="{{main_image}}" width="100%" alt="{{title}}"></div>
-</div>
-{{/if}}
-<div class="row">
-    <div class="col-md-6 offset-md-2">
-        <div style="font-size: 24px;">{{large_intro_text}}</div>
-        <p>{{intro_blurb}}</p>
-    </div>
-    {{more_content}}
-    <div style="margin-top: 30px;" class="col-md-10 offset-md-1">
-        <img src="{{image}}" width="100%" alt="">
-        {{if text}}
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <p>{{text}}</p>
-                </div>
-            </div>
-        {{/if}}
-    </div>
-    {{/more_content}}
-</div>
-
-<div class="work">
-    <div class="row">
-        {{collection:work sort="order"}}
-        <div class="col-xs-12 col-md-6 col-xl-4">
-            <div class="workcard-small">
-                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding:30px;">
-                    {{if coming_soon}}
-                        <img src="{{main_image}}" alt="{{title}}">
-                        <h1 style="font-size: 36px; line-height: 48px;">{{title}}</h1>
-                        <p style="color: #d10707; font-weight: 700;">Coming Soon</p>
-                    {{else}}
-                    <a href="{{url}}">
-                        <img src="{{main_image}}" alt="{{title}}">
-                        <h1 style="font-size: 36px; line-height: 48px;">{{title}}</h1>
-                    </a>    
-                    {{/if}}    
-                    <p>{{card_blurb}}</p>
-                </div>
+    <div class="grid-item">
+        
+    
+        {{if movie}}
+        <div class="row" style="margin-bottom: 30px;">
+            <div class="col-sm-10 offset-sm-1">
+                <video src="{{movie}}" width="100%" autoplay loop></video>
             </div>
         </div>
-        {{/collection:work}}
+        {{/if}}
+    
+        {{if hide_main_image}}
+        {{else}}
+        <div class="row">
+            <div class="col-md-10 offset-md-1"><img src="{{main_image}}" width="100%" alt="{{title}}"></div>
+        </div>
+        {{/if}}
+        <div class="row">
+            <div class="col-md-6 offset-md-2">
+                <div style="font-size: 24px;">{{large_intro_text}}</div>
+                <p>{{intro_blurb}}</p>
+            </div>
+            {{more_content}}
+            <div style="margin-top: 30px;" class="col-md-10 offset-md-1">
+                <img src="{{image}}" width="100%" alt="">
+                {{if text}}
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <p>{{text}}</p>
+                        </div>
+                    </div>
+                {{/if}}
+            </div>
+            {{/more_content}}
+        </div>
+    
+        <div class="work">
+            <div class="row">
+                {{collection:work sort="order"}}
+                <div class="col-xs-12 col-md-6 col-xl-4">
+                    <div class="workcard-small">
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding:30px;">
+                            {{if coming_soon}}
+                                <img src="{{main_image}}" alt="{{title}}">
+                                <h1 style="font-size: 36px; line-height: 48px;">{{title}}</h1>
+                                <p style="color: #d10707; font-weight: 700;">Coming Soon</p>
+                            {{else}}
+                            <a href="{{url}}">
+                                <img src="{{main_image}}" alt="{{title}}">
+                                <h1 style="font-size: 36px; line-height: 48px;">{{title}}</h1>
+                            </a>
+                            {{/if}}
+                            <p>{{card_blurb}}</p>
+                        </div>
+                    </div>
+                </div>
+                {{/collection:work}}
+            </div>
+        </div>
     </div>
 </div>
