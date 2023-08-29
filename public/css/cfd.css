@@ -409,9 +409,15 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  header {
+    padding: 60px;
+  }
   .schools {
     flex-direction: row;
     gap: 60px;
+  }
+  #content {
+    padding: 30px 60px;
   }
   .workcard {
     padding: 42px;
@@ -419,7 +425,6 @@ nav a:hover {
 }
 @media only screen and (min-width: 992px) {
   header {
-    padding: 60px;
     position: fixed;
     height: 83vh;
     top: 0;
@@ -429,7 +434,6 @@ nav a:hover {
   }
   #content {
     top: 83vh;
-    padding: 30px 60px;
   }
   .infobar {
     flex-direction: row;

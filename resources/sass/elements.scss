@@ -251,11 +251,16 @@ nav {
 
 
 @media only screen and (min-width: $md) {
-    
+    header {
+        padding: 60px;
+    }
     .schools {
         flex-direction: row;
         gap: 60px;
         
+    }
+    #content {
+        padding: 30px 60px;
     }
     .workcard {
         padding: 42px;
@@ -263,7 +268,6 @@ nav {
 }
 @media only screen and (min-width: $lg) {
     header {
-        padding: 60px;
         position: fixed;
         height: 83vh;
         top: 0; 
@@ -273,7 +277,6 @@ nav {
     }
     #content {
         top: 83vh;
-        padding: 30px 60px;
     }
     .infobar {
         flex-direction: row;
