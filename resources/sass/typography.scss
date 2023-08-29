@@ -41,9 +41,9 @@ p  a {
 }
 h1 {
     font-family: $sans;
-    font-size: 42px;
-    line-height: 48px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
 }
 h2 {
     font-family: $bold;
@@ -67,10 +67,34 @@ a {
     }
 }
 .display {
-    font-size: 96px;
-    line-height: 105px;
+    font-size: 36px;
+    line-height: 48px;
     font-family: $bold;
     color: $eco_strong;
+}
+@media only screen and (min-width: $md) {
+    .display { 
+        font-size: 54px;
+        line-height: 63px;
+    }
+}
+// @media only screen and (min-width: $lg) {
+//     .display { 
+//         font-size: 72px;
+//         line-height: 84px;
+//     }
+// }
+// @media only screen and (min-width: $xl) {
+//     .display { 
+//         font-size: 96px;
+//         line-height: 105px;
+//     }
+// }
+@media only screen and (min-width: $xxl) {
+    .display { 
+        font-size: 96px;
+        line-height: 105px;
+    }
 }
 .large {
     font-size: 21px;
@@ -81,6 +105,12 @@ a {
 
 
 @media only screen and (min-width: $md) {
+    h1 { 
+        font-size: 42px;
+        line-height: 48px;
+    }
+}
+@media only screen and (min-width: $lg) {
     h1 { 
         font-size: 64px;
         line-height: 70px;
