@@ -1,48 +1,35 @@
-<div class="row" style="margin-bottom: 96px; margin-top: 96px; text-align: center;">
+<!-- <div class="row" style="margin-bottom: 96px; margin-top: 96px; text-align: center;">
     <div class="col-sm-10 offset-sm-1">
         <h1><nobr>strategically-aligned,</nobr> <nobr>experience-centered,</nobr> <nobr>empathy-driven</nobr> product design for change</h1>
     </div>
-</div>
+</div> -->
 
-<div class="row">
-    <div class="col-sm-12">
-        {{collection:work sort="order"}}
-            
-                <div class="workcard">
-                    <div class="row flex {{ switch between='flex-row|flex-row-reverse' }}">
-                        <div class="col-sm-12 col-xl-8 order-xl-2">
-                            {{if coming_soon}}
-                            <img src="{{main_image}}" width="100%" alt="{{title}}">
-                            {{else}}
-                            <a href="{{url}}">
-                                <img src="{{main_image}}" width="100%" alt="{{title}}">
-                            </a>
-                            {{/if}}
-                        </div>
-                        <div class="col-sm-12 col-xl-4 workcard-details">
-                            {{if coming_soon}}
-                                <h1>{{title}}</h1>
-                                <div class="tags">
-                                    {{type_of_work}}
-                                        <span class="tag">{{title}}</span>
-                                    {{/type_of_work}}
-                                </div>
-                                <p>{{card_blurb}}</p>
-                                <p style="color: #d10707; font-weight: 700;">Coming Soon</p>
-                            {{else}}
-                                <a href="{{url}}">
-                                    <h1>{{title}}</h1>
-                                </a>
-                                <div class="tags">
-                                    {{type_of_work}}
-                                        <span class="tag">{{title}}</span>
-                                    {{/type_of_work}}
-                                </div>
-                                <p>{{card_blurb}}</p>
-                            {{/if}}
-                        </div>
+<header style="padding: 60px; position: fixed; top: 0; display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 90px; height: 83vh">
+   
+                <div style="display: flex; flex-direction: row; justify-content: space-between;" class="spacer">
+                    <a href="/">
+                        <h2>Conrad Fulbrook</h2>
+                    </a>
+                    <div style="display: flex; height: 100%; flex-direction: row; gap: 60px;">
+                        <h3><a href="https://www.linkedin.com/in/conrad-fulbrook-59b09999/">LinkedIn</a></h3>
+                        <h3><a href="#"> Résumé</a></h3>
                     </div>
-                </div>
-        {{/collection:work}}
+                </div>     
+
+                <div style="display: flex; height: 100%; flex-direction: row; gap: 60px;">
+                    <h3>Cambridge University<p>BA, English Literature</p></h3>
+                    <h3>Rhode Island School of Design<p>MFA, Graphic Design</p></h3>
+                </div>   
+              
+    
+    <div>
+        <p class="display spacer">Product design director passionate about high-impact innovation for social uplift.</p>
+        <p class="large" style="max-width: 61%;">Fintech, SaaS, medical, and arts & cultural practice to improve peoples' lives at scale, through the applied humanism of modern technology and design.</p>
     </div>
-</div>
+    
+</header>
+
+<section id="content">   
+    {{partial:tabs}}             
+</section>
+

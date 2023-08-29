@@ -78,12 +78,17 @@ sections:
         field:
           always_show_set_button: false
           buttons:
+            - h2
+            - h3
             - bold
             - italic
             - unorderedlist
             - orderedlist
             - removeformat
+            - quote
             - anchor
+            - image
+            - table
           save_html: false
           toolbar_mode: fixed
           link_noopener: false
@@ -98,6 +103,15 @@ sections:
           display: 'Large intro text'
           type: bard
           icon: bard
+          listable: hidden
+          instructions_position: above
+      -
+        handle: large_intro_textNEW
+        field:
+          antlers: false
+          display: 'Large intro text NEW'
+          type: textarea
+          icon: textarea
           listable: hidden
           instructions_position: above
       -
@@ -211,3 +225,23 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: type
+        field:
+          options:
+            Freelance: null
+            Professional: null
+            Teaching: null
+            Photography: null
+          multiple: false
+          max_items: 1
+          clearable: true
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Type
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above

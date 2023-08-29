@@ -1,30 +1,37 @@
+
+
+@font-face {
+    font-family: 'BwGradual';
+    src: url('/fonts/bw-gradual-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BwGradualBold';
+    src: url('/fonts/bw-gradual-bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BwGradualBlack';
+    src: url('/fonts/bw-gradual-black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $serif: 'Cormorant', serif;
-$sans: 'Work Sans', sans-serif;
+$sans: 'BwGradual', sans-serif;
+$bold: 'BwGradualBold', sans-serif;
+$black: 'BwGradualBlack';
 
 body {
-    color: $softblack;
+    color: $eco_strong;
     font-family: $sans;
 }
-
-h1 {
-    font-family: $serif;
-    font-size: 42px;
-    line-height: 48px;
-    margin-bottom: 10px;
-}
-h2 {
-    font-family: $serif;
-    font-size: 36px;
-    line-height: 48px;
-    margin-bottom: 10px;
-}
-a {
+p {
+    font-size: 18px;
+    line-height: 28px;
     color: $softblack;
-    padding-bottom: 6px;
-    &:hover {
-        text-decoration: none;
-        color: inherit;
-    }
 }
 p  a {
     text-decoration: underline;
@@ -32,6 +39,46 @@ p  a {
             text-decoration: underline;
         }
 }
+h1 {
+    font-family: $sans;
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-family: $bold;
+    font-size: 36px;
+    line-height: 36px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 42px;
+}
+h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+a {
+    color: $softblack;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+.display {
+    font-size: 96px;
+    line-height: 105px;
+    font-family: $bold;
+    color: $eco_strong;
+}
+.large {
+    font-size: 21px;
+}
+.black {
+    font-family: $black;
+}
+
 
 @media only screen and (min-width: $md) {
     h1 { 

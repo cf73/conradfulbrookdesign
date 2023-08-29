@@ -2,7 +2,7 @@
 id: 8cb3f043-7e81-47a1-a0ad-408e48a1f1fe
 blueprint: work
 title: Fidelis
-main_image: Fidelis.png
+main_image: FidelisAV1.jpg
 intro_blurb:
   -
     type: paragraph
@@ -79,22 +79,16 @@ intro_blurb:
         type: text
         text: 'Future plans include more visual refinement and a full eCommerce solution.'
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1643054895
-card_blurb: "Fidelis is a leading importer, distributor and retailer of high-end 'audiophile' equipment, based in\L Nashua, NH"
+updated_at: 1693282900
+card_blurb: 'Fidelis is a leading importer, distributor and retailer of high-end ''audiophile'' equipment, based in Nashua, NH'
 type_of_work:
   - identity
   - ux-ui
   - ia
   - website
   - cms
+  - front-end-code
 role: Freelance
-large_intro_text:
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Fidelis is a leading importer, distributor and retailer of high-end ''audiophile'' equipment based in Nashua, NH. I was buying a set of speakers there, and while paying happened to mention in passing (to the owner, it turned out) that the store''s existing website didn''t really match up to the quality and aesthetics of the products they sold.'
 more_content:
   -
     image: Fidelis-Responsive-1643049695.png
@@ -112,4 +106,8 @@ more_content:
     image: Fidelis2.png
     type: image
     enabled: true
+coming_soon: false
+hide_main_image: false
+type: Freelance
+large_intro_textNEW: 'Fidelis is a leading importer, distributor and retailer of high-end ''audiophile'' equipment based in Nashua, NH. I was buying a set of speakers there, and while paying happened to mention in passing (to the owner, it turned out) that the store''s existing website didn''t really match up to the quality and aesthetics of the products they sold.'
 ---

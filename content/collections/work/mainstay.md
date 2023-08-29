@@ -2,28 +2,25 @@
 id: 60f0d99a-57f2-4711-98a6-1b1bd3cf9ddf
 blueprint: work
 title: Mainstay
-card_blurb: 'AI-based student support messaging platform for higher-ed, levelling the playing field at historic scale to provide less privileged kids with equal opportunity in life.'
-main_image: Mainstay2.png
+card_blurb: 'An AI-based student support messaging platform for higher-ed, levelling the playing field at historic scale to provide under-served communities with equal opportunity in college and beyond.'
+main_image: Mainstay1.jpg
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1643087820
+updated_at: 1693280844
 type_of_work:
+  - strategy
+  - leadership
+  - saas
+  - design-thinking
   - ux-ui
   - ia
-  - saas
   - research
   - identity
-  - design-thinking
   - lean-ux
+  - prototyping
+  - project-management
 role: 'Director of Product Design'
 coming_soon: false
 hide_main_image: false
-large_intro_text:
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Mainstay is a market leader in AI-based behavioral intelligence, with a focus on supporting students in higher-ed throughout their journey. Third party studies have shown Mainstay is having a remarkable effect in improving admission, outcomes, and retention for students from less privileged backgrounds, essentially eliminating the difference between these groups and more privileged students who are well supported.'
 more_content:
   -
     image: Mainstay-1643083636.png
@@ -207,4 +204,6 @@ intro_blurb:
               -
                 type: text
                 text: 'defined and delivered new product directions based on user insights and business goals.'
+type: Professional
+large_intro_textNEW: 'Mainstay is a market leader in AI-based behavioral intelligence, with a focus on supporting students in higher-ed throughout their journey. Third party studies have shown Mainstay is having a remarkable effect in improving admission, outcomes, and retention for students from less privileged backgrounds, essentially eliminating the difference between these groups and more privileged students who are well supported.'
 ---

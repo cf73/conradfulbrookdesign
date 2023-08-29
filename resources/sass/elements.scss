@@ -1,12 +1,54 @@
-//breakpoints
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
-
 body {
     background-color: $ceramic;
+    background-color: $lightcactus;
+}
+header {
+    width: 100%;
+    color: $softblack;
+    background-color: rgba(255, 255, 255, 0.879);
+    backdrop-filter: blur(9px);
+    & h3, a {
+        margin: 0;
+        padding: 0;
+    }
+    & .large {
+        color: $eco_strong;
+    }
+}
+
+//shadows
+$shallow: 0 2px 12px 0px #e4e4e47d;
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 120px;
+    background-color: $ceramic;
+    width: 100%;
+    z-index: 999999999999999999;
+    backdrop-filter: blur(9px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    & h2 {
+        margin: 0;
+    }
+    & #close {
+        position: absolute;
+        left: 60px;
+        z-index: 999999999999999999999999999999999;
+    }
+}
+main {
+    position: relative;
+    // top: 60px;
+}
+
+.tab-content>.active {
+    // background-color: $aquateal;
 }
 .work {
     display: flex;
@@ -20,27 +62,81 @@ body {
         padding: 0 60px;
     }
 }
+#content {
+    background-color: $lightcactus_trans;
+    padding: 30px 60px;
+    padding-top: 0;
+    position: relative;
+    top: 83vh;
+    backdrop-filter: blur(16px);
+    & a, p {
+        // color: $lightcactus;
+    }
+    & #myTab {
+        position: sticky;
+        padding-top: 30px;
+        top: 0;
+        z-index: 999999;
+        gap: 12px;
+    }
+}
+.more_content {
+    position: relative; 
+    z-index: 9999999999999999999999999999;
+    & #content {
+        top: 0;
+    }
+}
 .workcard {
     display: flex;
     flex-direction: row;
-    padding-top: 30px;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
+    // background-color: rgb(255, 255, 255);
+    // background-color: rgb(29 29 29 / 92%);
+    // backdrop-filter: blur(10px);
+    border-radius: 21px;
+    height: 94%;
+    overflow: hidden;
+    box-shadow: $shallow;
+    background-color: rgb(255, 255, 255);
+    padding: 42px;
+    color: $softblack;
+    // backdrop-filter: blur(16px);
+    & img {
+        // box-shadow: 0 2px 20px 8px rgb(7 26 25 / 13%);
+        transition: all 1s;
+        border: solid $lightcactus thin;
+        border-radius: 12px;
+        // &:hover {
+        //     transform: scale(103%);
+        //     transition: all 1s;
+        // }
+    }
+    // & p {
+    //     color: $lightcactus;
+    // }
+    & h2 {
+        // padding: 12px 44px;
+        // color: $eco_strong;
+        margin-top: 0;
+        margin-bottom: .5em;
+    }
 }
 .workcard-details {
+    padding: 12px;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    align-items: center; 
-    text-align: center; 
 }
 @media only screen and (min-width: $sm) {
     .workcard-details { 
-        padding: 0 60px;
+        // padding: 0px 90px;
+        // padding-bottom: 24px;
     }
 }
 @media only screen and (min-width: $xxl) {
     .workcard-details { 
-        padding: 0 90px;
+        // padding: 0px 48px;
     }
 }
 .workcard-small {
@@ -57,7 +153,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 12px;
-    justify-content: center;
+    justify-content: start;
+    gap: 8px;
 }
 @media only screen and (min-width: $md) {
     .tags { 
@@ -67,10 +164,11 @@ body {
 .tag {
     display: inline-block;
     padding: 3px 10px;
-    font-weight: 300;
-    border: solid thin lightgray;
+    font-size: smaller;
+    color: $eco_strong;
     border-radius: 10px;
-    margin: 5px 5px;
+    mix-blend-mode: multiply;
+    background-color: $eco_strong-trans
 }
 .title {
     font-weight: 700;
@@ -111,4 +209,13 @@ nav {
             border-bottom: solid thin red;
         }
     }
+}
+.spacer {
+    margin-bottom: 30px;
+}
+.spacer_medium {
+    margin-bottom: 60px;
+}
+.spacer_big {
+    margin-bottom: 120px;
 }
