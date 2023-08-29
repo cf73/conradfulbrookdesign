@@ -1,16 +1,23 @@
 .grid-container {
   display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 0 80px;
+  grid-column-gap: 120px;
+}
+
+.grid-container_stacked {
+  display: grid;
   grid-template-columns: 0fr 3fr;
   margin: 0 80px;
   grid-column-gap: 120px;
 }
 
-.spacer {
-  margin-bottom: 30px;
+.primary {
+  color: #303030;
 }
 
-.spacer_big {
-  margin-bottom: 120px;
+.secondary {
+  color: rgb(51, 141, 122);
 }
 
 @font-face {
@@ -34,6 +41,19 @@
 body {
   color: rgb(51, 141, 122);
   font-family: "BwGradual", sans-serif;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #303030;
+}
+
+p a {
+  text-decoration: underline;
+}
+p a:hover {
+  text-decoration: underline;
 }
 
 h1 {
@@ -62,33 +82,25 @@ h4 {
 
 a {
   color: #303030;
-  padding-bottom: 6px;
 }
 a:hover {
   text-decoration: none;
   color: inherit;
 }
 
-.large {
+.display {
   font-size: 96px;
   line-height: 105px;
   font-family: "BwGradualBold", sans-serif;
+  color: rgb(51, 141, 122);
+}
+
+.large {
+  font-size: 21px;
 }
 
 .black {
   font-family: "BwGradualBlack";
-}
-
-p {
-  font-size: 21px;
-  line-height: 28px;
-}
-
-p a {
-  text-decoration: underline;
-}
-p a:hover {
-  text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) {
@@ -106,20 +118,33 @@ p a:hover {
 }
 
 .nav-tabs .nav-link {
-  background-color: transparent;
+  background-color: #f4f5f4;
+  outline: none;
+  border-radius: 12px;
+  border: none;
+}
+.nav-tabs .nav-link h3 {
+  margin: 0;
+}
+.nav-tabs .nav-link:hover {
+  border: none;
+  box-shadow: 0 2px 12px 0px rgba(228, 228, 228, 0.4901960784);
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  background-color: transparent;
+  background-color: #FAFBF9;
   border: none;
+  box-shadow: 0 2px 12px 0px rgba(228, 228, 228, 0.4901960784);
   color: rgb(51, 141, 122);
 }
-.nav-tabs .nav-item.show .nav-link h1, .nav-tabs .nav-link.active h1 {
-  font-family: "BwGradualBlack";
-}
-
 .tab-content {
   padding-top: 30px;
+}
+
+.fixed {
+  background-color: rgba(244, 245, 244, 0.72);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
 }
 
 body {
@@ -142,6 +167,31 @@ header .large {
   color: rgb(51, 141, 122);
 }
 
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 120px;
+  background-color: #FAFBF9;
+  width: 100%;
+  z-index: 1000000000000000000;
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+.top-bar h2 {
+  margin: 0;
+}
+.top-bar #close {
+  position: absolute;
+  left: 60px;
+  z-index: 1000000000000000000000000000000000;
+}
+
 main {
   position: relative;
 }
@@ -160,13 +210,30 @@ main {
   }
 }
 #content {
-  background-color: rgba(244, 245, 244, 0.83);
+  background-color: rgba(244, 245, 244, 0.72);
+  padding: 30px 60px;
+  padding-top: 0;
   position: relative;
   top: 83vh;
-  padding: 30px 60px;
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
 }
+#content #myTab {
+  position: sticky;
+  padding-top: 30px;
+  top: 0;
+  z-index: 999999;
+  gap: 12px;
+}
+
+.more_content {
+  position: relative;
+  z-index: 10000000000000000000000000000;
+}
+.more_content #content {
+  top: 0;
+}
+
 .workcard {
   display: flex;
   flex-direction: row;
@@ -176,7 +243,7 @@ main {
   overflow: hidden;
   box-shadow: 0 2px 12px 0px rgba(228, 228, 228, 0.4901960784);
   background-color: rgb(255, 255, 255);
-  padding: 18px;
+  padding: 42px;
   color: #303030;
 }
 .workcard img {
@@ -270,4 +337,16 @@ nav a:hover {
   color: red;
   text-decoration: none;
   border-bottom: solid thin red;
+}
+
+.spacer {
+  margin-bottom: 30px;
+}
+
+.spacer_medium {
+  margin-bottom: 60px;
+}
+
+.spacer_big {
+  margin-bottom: 120px;
 }

@@ -15,10 +15,38 @@ header {
         color: $eco_strong;
     }
 }
+
+//shadows
+$shallow: 0 2px 12px 0px #e4e4e47d;
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 120px;
+    background-color: $ceramic;
+    width: 100%;
+    z-index: 999999999999999999;
+    backdrop-filter: blur(9px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    & h2 {
+        margin: 0;
+    }
+    & #close {
+        position: absolute;
+        left: 60px;
+        z-index: 999999999999999999999999999999999;
+    }
+}
 main {
     position: relative;
     // top: 60px;
 }
+
 .tab-content>.active {
     // background-color: $aquateal;
 }
@@ -36,15 +64,29 @@ main {
 }
 #content {
     background-color: $lightcactus_trans;
+    padding: 30px 60px;
+    padding-top: 0;
     position: relative;
     top: 83vh;
-    padding: 30px 60px;
     backdrop-filter: blur(16px);
     & a, p {
         // color: $lightcactus;
     }
+    & #myTab {
+        position: sticky;
+        padding-top: 30px;
+        top: 0;
+        z-index: 999999;
+        gap: 12px;
+    }
 }
-
+.more_content {
+    position: relative; 
+    z-index: 9999999999999999999999999999;
+    & #content {
+        top: 0;
+    }
+}
 .workcard {
     display: flex;
     flex-direction: row;
@@ -55,9 +97,9 @@ main {
     border-radius: 21px;
     height: 94%;
     overflow: hidden;
-    box-shadow: 0 2px 12px 0px #e4e4e47d;
+    box-shadow: $shallow;
     background-color: rgb(255, 255, 255);
-    padding: 18px;
+    padding: 42px;
     color: $softblack;
     // backdrop-filter: blur(16px);
     & img {
@@ -167,4 +209,13 @@ nav {
             border-bottom: solid thin red;
         }
     }
+}
+.spacer {
+    margin-bottom: 30px;
+}
+.spacer_medium {
+    margin-bottom: 60px;
+}
+.spacer_big {
+    margin-bottom: 120px;
 }

@@ -28,7 +28,17 @@ body {
     color: $eco_strong;
     font-family: $sans;
 }
-
+p {
+    font-size: 18px;
+    line-height: 28px;
+    color: $softblack;
+}
+p  a {
+    text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+        }
+}
 h1 {
     font-family: $sans;
     font-size: 42px;
@@ -51,30 +61,24 @@ h4 {
 }
 a {
     color: $softblack;
-    padding-bottom: 6px;
     &:hover {
         text-decoration: none;
         color: inherit;
     }
 }
-.large {
+.display {
     font-size: 96px;
     line-height: 105px;
     font-family: $bold;
+    color: $eco_strong;
+}
+.large {
+    font-size: 21px;
 }
 .black {
     font-family: $black;
 }
-p {
-    font-size: 21px;
-    line-height: 28px;
-}
-p  a {
-    text-decoration: underline;
-        &:hover {
-            text-decoration: underline;
-        }
-}
+
 
 @media only screen and (min-width: $md) {
     h1 { 

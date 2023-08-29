@@ -7,16 +7,16 @@ $xxl: 1400px;
 
 .grid-container {
     display: grid;
+    grid-template-columns: 03fr 1fr;
+    margin: 0 80px;
+    grid-column-gap: 120px;
+}
+.grid-container_stacked {
+    display: grid;
     grid-template-columns: 0fr 3fr;
     margin: 0 80px;
     grid-column-gap: 120px;
 }
 .grid1 {
 
-}
-.spacer {
-    margin-bottom: 30px;
-}
-.spacer_big {
-    margin-bottom: 120px;
 }

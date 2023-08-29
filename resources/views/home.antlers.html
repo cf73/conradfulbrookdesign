@@ -4,89 +4,32 @@
     </div>
 </div> -->
 
-<header style="padding: 60px; position: fixed; display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 90px; height: 83vh">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <a href="/">
-                    <h2>Conrad Fulbrook</h2>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h3><a href="#"><i class="las la-file-download"></i> Résumé</a></h3>
-                <h3><a href="https://www.linkedin.com/in/conrad-fulbrook-59b09999/"><i class="lab la-linkedin"></i> LinkedIn</a></h3>
-                <h3><i class="las la-phone"></i> (857) 654 3985</h3>
-                <h3><i class="las la-envelope"></i> cfulbroo@alumni.risd.edu</h3>
-            </div>
-            <div class="col-md-6">
-                <div style="display: flex; height: 100%; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <h4>BA, English Literature</h4>
-                        <h2>Cambridge University</h2>
+<header style="padding: 60px; position: fixed; top: 0; display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 90px; height: 83vh">
+   
+                <div style="display: flex; flex-direction: row; justify-content: space-between;" class="spacer">
+                    <a href="/">
+                        <h2>Conrad Fulbrook</h2>
+                    </a>
+                    <div style="display: flex; height: 100%; flex-direction: row; gap: 60px;">
+                        <h3><a href="https://www.linkedin.com/in/conrad-fulbrook-59b09999/">LinkedIn</a></h3>
+                        <h3><a href="#"> Résumé</a></h3>
                     </div>
-                    <div>
-                        <h4>MFA, Graphic Design</h4>
-                        <h2>Rhode Island School of Design</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </div>     
+
+                <div style="display: flex; height: 100%; flex-direction: row; gap: 60px;">
+                    <h3>Cambridge University<p>BA, English Literature</p></h3>
+                    <h3>Rhode Island School of Design<p>MFA, Graphic Design</p></h3>
+                </div>   
+              
     
     <div>
-        <p class="large">Product designer director passionate about high-impact innovation for social uplift.</p>
-        <p style="max-width: 61%;">Fintech, SaaS, medical, and arts & cultural practice to improve peoples' lives at scale, through the applied humanism of modern technology and design.</p>
+        <p class="display spacer">Product design director passionate about high-impact innovation for social uplift.</p>
+        <p class="large" style="max-width: 61%;">Fintech, SaaS, medical, and arts & cultural practice to improve peoples' lives at scale, through the applied humanism of modern technology and design.</p>
     </div>
     
 </header>
 
 <section id="content">   
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><h3>Full Time</h3></button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><h3>Freelance</h3></button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"><h3>Teaching</h3></button>
-        </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="container-fluid">
-                <div class="row">
-                    {{collection:work sort="order" type:is="professional" }}
-                        <div class="col-sm-4">
-                            {{partial:workcard}}
-                        </div>
-                    {{/collection:work}}
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="container-fluid">
-                <div class="row">
-                    {{collection:work sort="order" type:is="freelance" }}
-                        <div class="col-sm-4">
-                            {{partial:workcard}}
-                        </div>
-                    {{/collection:work}}
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <div class="container-fluid">
-                <div class="row">
-                    {{collection:work sort="order" type:is="teaching" }}
-                        <div class="col-sm-4">
-                            {{partial:workcard}}
-                        </div>
-                    {{/collection:work}}
-                </div>
-            </div>
-        </div>
-    </div>               
+    {{partial:tabs}}             
 </section>
+

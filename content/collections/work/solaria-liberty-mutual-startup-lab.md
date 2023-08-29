@@ -5,13 +5,6 @@ title: 'Certainly (Liberty Mutual)'
 role: 'Lead Designer (agency)'
 card_blurb: 'Helping under-insured millennials find insurance coverage they can afford and relate to.'
 main_image: Certainly1.jpg
-large_intro_text:
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Solaria is an incubator startup based out of Liberty Mutual. Its product, ''Certainly'', is a suite of insurance products aimed at millennials. In a crowded market, they turned to Mad*Pow (a leading Boston and Portsmouth-based design agency) to help discover how they might differentiate their product and connect with their target market.'
 intro_blurb:
   -
     type: paragraph
@@ -31,7 +24,7 @@ more_content:
     type: image
     enabled: true
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1693252250
+updated_at: 1693286820
 coming_soon: false
 hide_main_image: false
 type_of_work:
@@ -43,4 +36,5 @@ type_of_work:
   - prototyping
   - leadership
 type: Professional
+large_intro_textNEW: 'Solaria is an incubator startup based out of Liberty Mutual. Its product, ''Certainly'', is a suite of insurance products aimed at millennials. In a crowded market, they turned to Mad*Pow (a leading Boston and Portsmouth-based design agency) to help discover how they might differentiate their product and connect with their target market.'
 ---

@@ -8,19 +8,15 @@ movie: TD-Bank.mp4
 main_image: TD-Bank.png
 hide_main_image: true
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1693252540
-large_intro_text:
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'TD Bank approached Mad*Pow to redesign their online banking platform. I led a team through a Lean UX iterative process, discovering user needs and pain points, and applying principles based on gamification that actually turned that most dreaded of chores — paying bills — into something satisfying, rewarding, even fun.'
+updated_at: 1693286784
 type_of_work:
   - ia
   - lean-ux
   - ux-ui
   - saas
   - interaction-design
+  - aftereffects
+  - front-end-code
 type: Professional
+large_intro_textNEW: 'TD Bank approached Mad*Pow to redesign their online banking platform. I led a team through a Lean UX iterative process, discovering user needs and pain points, and applying principles based on gamification that actually turned that most dreaded of chores — paying bills — into something satisfying, rewarding, even fun.'
 ---

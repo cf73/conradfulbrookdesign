@@ -2,24 +2,30 @@
     <div class="row flex {{ switch between='flex-row|flex-row-reverse' }}">
         <div class="col-sm-12 workcard-details">
             {{if coming_soon}}
-                <h2>{{title}}</h2>
+                <span style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <h2>{{title}}</h2>
+                    <h2 class="secondary"><i class="las la-arrow-circle-right"></i></h2>
+                </span>
                 <div class="tags">
                     {{type_of_work}}
                         <span class="tag">{{title}}</span>
                     {{/type_of_work}}
                 </div>
-                <p>{{card_blurb}}</p>
+                <p class="large">{{card_blurb}}</p>
                 <p style="color: #d10707; font-weight: 700;">Coming Soon</p>
             {{else}}
                 <a href="{{url}}">
-                    <h2>{{title}}</h2>
+                    <span style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <h2>{{title}}</h2>
+                        <h2 class="secondary"><i class="las la-arrow-circle-right"></i></h2>
+                    </span>
                 </a>
                 <div class="tags">
                     {{type_of_work}}
                         <span class="tag">{{title}}</span>
                     {{/type_of_work}}
                 </div>
-                <p>{{card_blurb}}</p>
+                <p class="large">{{card_blurb}}</p>
                 
             {{/if}}
         </div>
