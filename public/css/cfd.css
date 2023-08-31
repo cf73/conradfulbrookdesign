@@ -101,7 +101,7 @@ a:hover {
     line-height: 63px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1600px) {
   .display {
     font-size: 96px;
     line-height: 105px;
