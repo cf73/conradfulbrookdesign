@@ -189,17 +189,21 @@ sections:
                     restrict: false
                     allow_uploads: true
                     show_filename: true
-                    max_files: 1
+                    max_files: 8
                     display: Image
                     type: assets
                     icon: assets
                     listable: hidden
                     instructions_position: above
+                    visibility: visible
+                    container: assets
           display: 'More content'
           type: replicator
           icon: replicator
           listable: hidden
           instructions_position: above
+          visibility: visible
+          previews: true
   sidebar:
     display: Sidebar
     fields:

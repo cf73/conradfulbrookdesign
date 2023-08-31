@@ -111,6 +111,10 @@ a:hover {
   font-size: 21px;
 }
 
+.bold {
+  font-family: "BwGradualBold", sans-serif;
+}
+
 .black {
   font-family: "BwGradualBlack";
 }
