@@ -6,7 +6,7 @@ coming_soon: false
 card_blurb: "Design and development of website for America's leading importer and distributor of high-end audio equipment"
 hide_main_image: false
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1693468046
+updated_at: 1693468837
 main_image: fd1-1693466798.jpg
 type_of_work:
   - website
@@ -55,6 +55,12 @@ more_content:
             type: text
             text: 'Editorial-style news allows dealerships to keep abreast of industry opinions and understand how best to promote the products.'
     type: content
+    enabled: true
+  -
+    id: llyvm9dc
+    image:
+      - web-capture_31-8-2023_4022_fidelisdistribution.com.jpeg
+    type: image
     enabled: true
 large_intro_textNEW: "Rather than focusing on the expensive equipment, as so many other distributor and dealer sites tend to do, the design here pays homage the 'musical heroes' and the passion of music itself, providing the raison d'être for the business, and conveying its core values."
 intro_blurb:
