@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div style="text-align: center;">
-                        <h3 class="spacer primary">{{card_blurb}}</h3>
+                        <h3 class="spacer primary bold">{{card_blurb}}</h3>
 
                         <div class="tags spacer_medium" style="justify-content: center;">
                             {{type_of_work}}
@@ -44,16 +44,25 @@
             <!-- left column text -->
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <p class="large">{{large_intro_textNEW}}</p>
+                    <h3 class="primary spacer">{{large_intro_textNEW}}</h3>
                     <p>{{intro_blurb}}</p>
                 </div>
                 {{more_content}}
                 <div style="margin-top: 30px;" class="col-md-12">
-                    <img src="{{image}}" width="100%" alt="">
+                    {{if image}}
+                    <div class="row">
+                        {{image}}
+                            <div class="col-md-6">
+                                <img src="{{url}}" alt="{{title}}" width="100%" style="margin-bottom: 30px;">
+                            </div>
+                        {{/image}}
+                    </div>
+                        
+                    {{/if}}
                     {{if text}}
                         <div class="row">
                             <div class="col-md-8 offset-md-2">
-                                <p>{{text}}</p>
+                                {{text}}
                             </div>
                         </div>
                     {{/if}}
