@@ -2,11 +2,11 @@
 id: 78eddb77-9007-4d97-9b68-482fa5834e35
 blueprint: work
 title: 'Fidelis Distribution'
-coming_soon: false
+coming_soon: true
 card_blurb: "Design and development of website for America's leading importer and distributor of high-end audio equipment"
 hide_main_image: false
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1693514204
+updated_at: 1693515084
 main_image: fd1-1693466798.jpg
 type_of_work:
   - website
