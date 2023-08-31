@@ -43,7 +43,7 @@ return [
 
         'password' => [
             'driver' => 'password',
-            'allowed' => ['escape'],
+            'allowed' => ['cfd23'],
             'form_url' => null,
         ],
 
