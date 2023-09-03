@@ -2,11 +2,11 @@
 id: 78eddb77-9007-4d97-9b68-482fa5834e35
 blueprint: work
 title: 'Fidelis Distribution'
-coming_soon: true
+coming_soon: false
 card_blurb: "Design and development of website for America's leading importer and distributor of high-end audio equipment"
-hide_main_image: false
+hide_main_image: true
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1693515084
+updated_at: 1693689261
 main_image: fd1-1693466798.jpg
 type_of_work:
   - website
@@ -16,29 +16,6 @@ type_of_work:
 role: Freelance
 type: Freelance
 more_content:
-  -
-    id: llyu2p40
-    image:
-      - fd4.jpg
-      - fd2-1693466375.jpg
-      - fd3-1693466379.jpg
-      - fd6.jpg
-      - fd5.jpg
-      - fd8.jpg
-      - fd7.jpg
-    type: image
-    enabled: true
-  -
-    id: llyv3vpg
-    text:
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'The hero image on the home page is randomized on page-load.'
-    type: content
-    enabled: true
   -
     id: llyv3oek
     image:
@@ -70,4 +47,13 @@ intro_blurb:
       -
         type: text
         text: 'Primarily a B2B site (promoting and distributing audio products to dealerships throughout the US), the design was influenced by some core constraints: the need to feature dealerships prominently and avoid appearing to be in competition with them; and the need represent the brands with respect and energy.'
+slideshow:
+  - fd1-1693688430.jpg
+  - fd2-1693688431.jpg
+  - fd3-1693688431.jpg
+  - fd4-1693688430.jpg
+  - fd5-1693688430.jpg
+  - fd6-1693688430.jpg
+  - fd7-1693688430.jpg
+  - fd8-1693688430.jpg
 ---

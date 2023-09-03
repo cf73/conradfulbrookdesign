@@ -57,7 +57,7 @@ p a:hover {
 }
 
 h1 {
-  font-family: "BwGradual", sans-serif;
+  font-family: "BwGradualBlack";
   font-size: 30px;
   line-height: 36px;
   margin: 0;
@@ -71,7 +71,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  line-height: 42px;
+  line-height: 36px;
 }
 
 h4 {
@@ -86,6 +86,16 @@ a {
 a:hover {
   text-decoration: none;
   color: inherit;
+}
+
+.caption {
+  max-width: 66%;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: "BwGradualBold", sans-serif;
+  color: rgb(51, 141, 122);
+  border-top: solid 2px rgb(51, 141, 122);
+  padding-top: 18px;
 }
 
 .display {
@@ -111,6 +121,13 @@ a:hover {
   font-size: 21px;
 }
 
+.intro {
+  font-size: 24px;
+  line-height: 33px;
+  font-family: "BwGradualBold", sans-serif;
+  margin-bottom: 0;
+}
+
 .bold {
   font-family: "BwGradualBold", sans-serif;
 }
@@ -127,8 +144,8 @@ a:hover {
 }
 @media only screen and (min-width: 992px) {
   h1 {
-    font-size: 64px;
-    line-height: 70px;
+    font-size: 54px;
+    line-height: 64px;
   }
 }
 .nav {
@@ -227,9 +244,9 @@ header .large {
   top: 0;
   left: 0;
   height: 120px;
-  background-color: #FAFBF9;
   width: 100%;
   z-index: 1000000000000000000;
+  background-color: rgba(244, 245, 244, 0.72);
   -webkit-backdrop-filter: blur(9px);
           backdrop-filter: blur(9px);
   display: flex;
@@ -237,6 +254,7 @@ header .large {
   justify-content: center;
   gap: 15px;
   align-items: center;
+  color: #f4f5f4;
 }
 .top-bar h2 {
   margin: 0;
@@ -398,6 +416,10 @@ nav a:hover {
   color: red;
   text-decoration: none;
   border-bottom: solid thin red;
+}
+
+.darkbackground {
+  padding-bottom: 120px;
 }
 
 .spacer {

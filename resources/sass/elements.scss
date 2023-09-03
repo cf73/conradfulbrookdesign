@@ -45,15 +45,17 @@ $shallow: 0 2px 12px 0px #e4e4e47d;
     top: 0;
     left: 0;
     height: 120px;
-    background-color: $ceramic;
+    // background-color: $ceramic;
     width: 100%;
     z-index: 999999999999999999;
+    background-color: $lightcactus_trans;
     backdrop-filter: blur(9px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
     align-items: center;
+    color: $lightcactus;
     & h2 {
         margin: 0;
     }
@@ -237,6 +239,19 @@ nav {
         }
     }
 }
+
+.darkbackground {
+    // background-color: $darkblack;
+    padding-bottom: 120px;
+    // & p, h3{
+    //     color: $lightcactus;
+    // }
+    // & .tags {
+    //     mix-blend-mode: screen;
+    // }
+}
+
+
 .spacer {
     margin-bottom: 30px;
 }

@@ -40,7 +40,7 @@ p  a {
         }
 }
 h1 {
-    font-family: $sans;
+    font-family: $black;
     font-size: 30px;
     line-height: 36px;
     margin: 0;
@@ -52,7 +52,7 @@ h2 {
 }
 h3 {
     font-size: 24px;
-    line-height: 42px;
+    line-height: 36px;
 }
 h4 {
     font-size: 16px;
@@ -65,6 +65,15 @@ a {
         text-decoration: none;
         color: inherit;
     }
+}
+.caption {
+    max-width: 66%;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: $bold;
+    color: $eco_strong;
+    border-top: solid 2px $eco_strong;
+    padding-top: 18px;
 }
 .display {
     font-size: 36px;
@@ -99,6 +108,12 @@ a {
 .large {
     font-size: 21px;
 }
+.intro {
+    font-size: 24px;
+    line-height: 33px;
+    font-family: $bold;
+    margin-bottom: 0;
+}
 .bold {
     font-family: $bold;
 }
@@ -115,7 +130,7 @@ a {
 }
 @media only screen and (min-width: $lg) {
     h1 { 
-        font-size: 64px;
-        line-height: 70px;
+        font-size: 54px;
+        line-height: 64px;
     }
 }
