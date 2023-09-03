@@ -6,7 +6,7 @@ coming_soon: false
 role: 'Design Director'
 hide_main_image: false
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1693720353
+updated_at: 1693721761
 card_blurb: "Delivering an innovative and disruptive strategy for the world's largest real-estate company, helping families buy their next home in the context of their wider finances."
 main_image: kw1-1693696016.jpg
 more_content:
@@ -119,6 +119,17 @@ more_content:
     type: image
     enabled: true
     caption: 'An industry first: affordability and mortgage calculators presented alongside a map of listings, actively filtering it — thus grounding a property search in the context of solid financial understanding, while on the backend also providing a rich lead-record for Agents and Loan Officers.'
+  -
+    id: lm322jtp
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "While user flows were non-linear and widely divergent, reflecting the massive variety of people looking for a mortgage, our design 'interventions' represented a distributed system of parts working collectively to reinforce messaging and provide multiple 'paths' to the same destination."
+    type: content
+    enabled: true
   -
     id: sF7X5Cbe
     type: image
