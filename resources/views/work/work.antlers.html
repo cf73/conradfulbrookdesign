@@ -1,76 +1,93 @@
-
 <div class="top-bar">
     <a id="close" href="/">
         <h2 class="secondary"><i class="las la-times"></i></h2>
     </a>
     <h1 class="primary">{{title}}</h1>
 </div>
-<div class="container spacer_medium" style="margin-top: 150px;">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div style="text-align: center;">
-                        <h3 class="spacer primary bold">{{card_blurb}}</h3>
-
-                        <div class="tags spacer_medium" style="justify-content: center;">
-                            {{type_of_work}}
-                                <span class="tag">{{title}}</span>
-                            {{/type_of_work}}
+<div class="darkbackground">
+    <div class="container spacer_medium" style="padding-top: 150px;">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div style="text-align: center;">
+                            <h3 class="spacer primary bold">{{card_blurb}}</h3>
+    
+                            <div class="tags spacer_medium" style="justify-content: center;">
+                                {{type_of_work}}
+                                    <span class="tag">{{title}}</span>
+                                {{/type_of_work}}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- movie -->
-            {{if movie}}
-            <div class="row" style="margin-bottom: 30px;">
-                <div class="col-sm-12">
-                    <video src="{{movie}}" width="100%" autoplay loop></video>
-                </div>
-            </div>
-            {{/if}}
-
-            <!-- if hide main image is checked -->
-            {{if hide_main_image}}
-
-            <!-- image -->
-            {{else}}
-            <div class="row">
-                <div class="col-md-12 spacer"><img src="{{main_image}}" width="100%" alt="{{title}}"></div>
-            </div>
-            {{/if}}
-
-            <!-- left column text -->
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <h3 class="primary spacer">{{large_intro_textNEW}}</h3>
-                    <p>{{intro_blurb}}</p>
-                </div>
-                {{more_content}}
-                <div style="margin-top: 30px;" class="col-md-12">
-                    {{if image}}
-                    <div class="row">
-                        {{image}}
-                            <div class="col-md-6">
-                                <img src="{{url}}" alt="{{title}}" width="100%" style="margin-bottom: 30px;">
-                            </div>
-                        {{/image}}
+    
+                <!-- movie -->
+                {{if movie}}
+                <div class="row" style="margin-bottom: 30px;">
+                    <div class="col-sm-12">
+                        <video src="{{movie}}" width="100%" autoplay loop></video>
                     </div>
-                        
-                    {{/if}}
-                    {{if text}}
+                </div>
+                {{/if}}
+    
+                <!-- slideshow -->
+                {{if slideshow}}
+                    <div class="swiper slideshow spacer">
+                        <div class="swiper-wrapper">
+                            {{slideshow}}
+                            <div class="swiper-slide">
+                                <img src="{{url}}" width="100%" alt="{{title}}">
+                            </div>
+                            {{/slideshow}}
+                        </div>
+                    </div>
+                {{/if}}
+    
+                <!-- if hide main image is checked -->
+                {{if hide_main_image}}
+    
+                <!-- image -->
+                {{else}}
+                <div class="row">
+                    <div class="col-md-12 spacer"><img src="{{main_image}}" width="100%" alt="{{title}}"></div>
+                </div>
+                {{/if}}
+    
+                <!-- left column text -->
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <h3 class="primary">{{large_intro_textNEW}}</h3>
+                        <p>{{intro_blurb}}</p>
+                    </div>
+                    {{more_content}}
+                    <div style="margin-top: 30px;" class="col-md-12">
+                        {{if image}}
                         <div class="row">
-                            <div class="col-md-8 offset-md-2">
-                                {{text}}
-                            </div>
+                            {{image}}
+                                <div class="col">
+                                    <img src="{{url}}" alt="{{title}}" width="100%" style="margin-bottom: 12px;">
+                                    {{if caption}}
+                                        <p class="caption">{{caption}}</p>
+                                    {{/if}}
+                                </div>
+                            {{/image}}
                         </div>
-                    {{/if}}
+                        {{/if}}
+
+                        {{if text}}
+                            <div class="row">
+                                <div class="col-md-8 offset-md-2">
+                                    {{text}}
+                                </div>
+                            </div>
+                        {{/if}}
+                    </div>
+                    {{/more_content}}
                 </div>
-                {{/more_content}}
             </div>
+    
         </div>
-        
     </div>
 </div>
 
@@ -79,3 +96,21 @@
         {{partial:tabs}}
     </section>
 </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper(".slideshow", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 30,
+        effect: "fade",
+        speed: 4000,
+        autoplay: {
+          delay: 500,
+          disableOnInteraction: false,
+        },
+    });
+  </script>

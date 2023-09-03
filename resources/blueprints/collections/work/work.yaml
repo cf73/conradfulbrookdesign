@@ -52,6 +52,21 @@ sections:
           listable: hidden
           instructions_position: above
       -
+        handle: slideshow
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 8
+          display: Slideshow
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
         handle: main_image
         field:
           mode: list
@@ -197,6 +212,16 @@ sections:
                     instructions_position: above
                     visibility: visible
                     container: assets
+                -
+                  handle: caption
+                  field:
+                    antlers: false
+                    display: Caption
+                    type: textarea
+                    icon: textarea
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
           display: 'More content'
           type: replicator
           icon: replicator
