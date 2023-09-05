@@ -89,7 +89,6 @@ a:hover {
 }
 
 .caption {
-  max-width: 66%;
   font-size: 30px;
   line-height: 36px;
   font-family: "BwGradualBold", sans-serif;
@@ -109,6 +108,9 @@ a:hover {
   .display {
     font-size: 54px;
     line-height: 63px;
+  }
+  .caption {
+    max-width: 66%;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -305,6 +307,7 @@ main {
 
 .workcard {
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   margin-bottom: 60px;
   border-radius: 21px;

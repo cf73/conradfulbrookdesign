@@ -67,7 +67,6 @@ a {
     }
 }
 .caption {
-    max-width: 66%;
     font-size: 30px;
     line-height: 36px;
     font-family: $bold;
@@ -85,6 +84,9 @@ a {
     .display { 
         font-size: 54px;
         line-height: 63px;
+    }
+    .caption {
+        max-width: 66%;
     }
 }
 // @media only screen and (min-width: $lg) {
