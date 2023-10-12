@@ -1,10 +1,13 @@
 $midnight: #190353;
 $ceramic: #FAFBF9;
+
 $lightcactus: #f4f5f4;
 $lightcactus_trans: rgb(244 245 244 / 72%);
 // $lightcactus: #e4e4e4;
 $softblack: #262626;
 $softblack: #303030;
+$softblacktrans: rgb(48 48 48 / 9%);
+$softblacktransstrong: rgb(48 48 48 / 62%);
 $darkblack: #1c1c1c;
 $ink: #011da7;
 $aquateal: #bfdcdc;
@@ -21,3 +24,6 @@ $eco_strong-trans:rgba(51, 141, 122, 0.06);
 .secondary {
     color: $eco_strong;
 }
+$candy: rgb(248 75 140 / 70%);
+$candystrong: rgb(255 5 99 / 78%);
+$candystrongdark: rgb(0 0 0 / 78%);
