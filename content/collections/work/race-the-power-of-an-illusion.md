@@ -11,7 +11,7 @@ intro_blurb:
         type: text
         text: 'Intro blurb here'
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1693276333
+updated_at: 1697649429
 type_of_work:
   - identity
   - website
@@ -21,7 +21,7 @@ type_of_work:
   - ux-ui
 role: Freelance
 coming_soon: true
-card_blurb: 'An online companion to the award-winning documentary series by California Newsreel'
+card_blurb: 'An online companion to the award-winning documentary series by California Newsreel.'
 hide_main_image: false
 type: Freelance
 ---
