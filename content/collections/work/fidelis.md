@@ -11,10 +11,10 @@ intro_blurb:
         type: text
         text: 'This initial conversation led to a lasting friendship, and in exchange for a standing discount I made Fidelis a new site, comprised of:'
   -
-    type: bullet_list
+    type: bulletList
     content:
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -23,7 +23,7 @@ intro_blurb:
                 type: text
                 text: 'a new visual design and set of responsive templates'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -32,7 +32,7 @@ intro_blurb:
                 type: text
                 text: 'a new information architecture, making navigation far more intuitive'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -41,16 +41,16 @@ intro_blurb:
                 type: text
                 text: 'new flows encouraging contextual browsing of products and services (the average visitor now visits upwards of ten pages; in a pandemic, this is as near to an in-store experience of browsing as you could hope for)'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'a new ''pre-owned'' section, allowing Fidelis to sell this equipment directly (and forming an addictive incentive for customers to return to the site frequently)'
+                text: "a new 'pre-owned' section, allowing Fidelis to sell this equipment directly (and forming an addictive incentive for customers to return to the site frequently)"
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -79,8 +79,8 @@ intro_blurb:
         type: text
         text: 'Future plans include more visual refinement and a full eCommerce solution.'
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1693282900
-card_blurb: 'Fidelis is a leading importer, distributor and retailer of high-end ''audiophile'' equipment, based in Nashua, NH'
+updated_at: 1697649449
+card_blurb: "Fidelis is a leading importer, distributor and retailer of high-end 'audiophile' equipment, based in Nashua, NH."
 type_of_work:
   - identity
   - ux-ui
@@ -91,23 +91,31 @@ type_of_work:
 role: Freelance
 more_content:
   -
-    image: Fidelis-Responsive-1643049695.png
+    id: BtEyadyJ
+    image:
+      - Fidelis-Responsive-1643049695.png
     type: image
     enabled: true
   -
-    image: Fidelis1.png
+    id: Xn1FvfHE
+    image:
+      - Fidelis1.png
     type: image
     enabled: true
   -
-    image: Fidelis-1643052145.png
+    id: OzAwoEVL
+    image:
+      - Fidelis-1643052145.png
     type: image
     enabled: true
   -
-    image: Fidelis2.png
+    id: pDUfzEK1
+    image:
+      - Fidelis2.png
     type: image
     enabled: true
 coming_soon: false
 hide_main_image: false
 type: Freelance
-large_intro_textNEW: 'Fidelis is a leading importer, distributor and retailer of high-end ''audiophile'' equipment based in Nashua, NH. I was buying a set of speakers there, and while paying happened to mention in passing (to the owner, it turned out) that the store''s existing website didn''t really match up to the quality and aesthetics of the products they sold.'
+large_intro_textNEW: "Fidelis is a leading importer, distributor and retailer of high-end 'audiophile' equipment based in Nashua, NH. I was buying a set of speakers there, and while paying happened to mention in passing (to the owner, it turned out) that the store's existing website didn't really match up to the quality and aesthetics of the products they sold."
 ---
