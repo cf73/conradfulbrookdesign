@@ -8,14 +8,14 @@ movie: Wellness-app.mp4
 main_image: wellness-app-hero.jpg
 hide_main_image: true
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1697649469
+updated_at: 1707104061
 intro_blurb:
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'In a tight three week timeframe, I architected and designed this app, with iterative working sessions with the client, and created this short video demoing it to allow the teams to continue to sell the concept internally with other stakeholders.'
+        text: 'Working from a blank canvas and in a tight three-week timeframe, I architected and designed this app, with iterative working sessions with the client, and created this short video demoing it to allow the teams to continue to sell the concept internally with other stakeholders.'
 type_of_work:
   - design-thinking
   - ia
@@ -24,5 +24,5 @@ type_of_work:
   - prototyping
   - aftereffects
 type: Professional
-large_intro_textNEW: "Aetna and CVS commissioned IDEO to help them discover how they might improve wellness for people who typically don't think about it. Their solution: an in-store body scan followed by personalized suggestions. Aetna/CVS then came to Mad*Pow, known for expertise in digital behavioral change, to create to second part of the journey: in iOS app surfacing these suggestions in an easily consumable manner."
+large_intro_textNEW: "Aetna and CVS commissioned IDEO to help them discover how they might improve wellness for people who typically don't think about it. Their solution: an in-store body scan followed by personalized suggestions. Aetna/CVS then came to Mad*Pow, known for expertise in digital behavioral change, to create to second part of the journey: an iOS app surfacing these suggestions in an easily consumable manner."
 ---

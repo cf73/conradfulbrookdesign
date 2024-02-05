@@ -52,7 +52,7 @@ body {
 
 p {
   font-size: 18px;
-  line-height: 28px;
+  line-height: 26px;
   color: #303030;
 }
 
@@ -78,7 +78,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  line-height: 36px;
+  line-height: 32px;
 }
 
 h4 {
@@ -128,7 +128,7 @@ a:hover {
 @media only screen and (min-width: 1600px) {
   .display {
     font-size: 96px;
-    line-height: 105px;
+    line-height: 96px;
   }
 }
 .large {
@@ -137,7 +137,7 @@ a:hover {
 
 .intro {
   font-size: 24px;
-  line-height: 33px;
+  line-height: 32px;
   font-family: "HKGrotesk-Regular", sans-serif;
   margin-bottom: 0;
 }
@@ -448,7 +448,7 @@ nav a:hover {
 }
 
 .spacer {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .spacer_medium {
