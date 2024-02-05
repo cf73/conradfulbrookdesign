@@ -18,11 +18,19 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'HKGrotesk-Regular';
+    src: url('/fonts/HKGrotesk/HKGrotesk-Regular.woff2') format('woff2'),
+         url('/fonts/HKGrotesk/HKGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 $serif: 'Cormorant', serif;
-$sans: 'BwGradual', sans-serif;
-$bold: 'BwGradualBold', sans-serif;
-$black: 'BwGradualBlack';
+$sans: 'HKGrotesk-Regular', sans-serif;
+$bold: 'HKGrotesk-Regular', sans-serif;
+$black: 'HKGrotesk-Regular';
 
 body {
     color: $eco_strong;
