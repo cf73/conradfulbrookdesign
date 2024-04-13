@@ -5,7 +5,7 @@ title: 'The Humanity Initiative'
 coming_soon: true
 role: 'Design Director'
 card_blurb: 'Strategy and redesign of the online presence for this small non-profit organization'
-main_image: humanity1.png
+main_image: humanity1-1712977196.png
 hide_main_image: false
 type_of_work:
   - website
@@ -22,5 +22,5 @@ type_of_work:
   - ux-ui
 type: Freelance
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1712976961
+updated_at: 1712977199
 ---
