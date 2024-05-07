@@ -1,5 +1,6 @@
 ---
 id: 80ac4a36-6f41-4107-b89c-1a83f185f8a3
+published: false
 blueprint: work
 title: 'The Humanity Initiative'
 coming_soon: true
@@ -22,5 +23,5 @@ type_of_work:
   - ux-ui
 type: Freelance
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1712977199
+updated_at: 1715096902
 ---
