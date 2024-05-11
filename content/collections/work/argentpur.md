@@ -6,8 +6,8 @@ coming_soon: true
 card_blurb: 'Identity and website (design and build, including custom CMS) for an audiophile cable manufacturer.'
 hide_main_image: false
 updated_by: 20afbc48-a67b-499d-803b-8e3bff7cf603
-updated_at: 1697649115
-main_image: agpurhero.png
+updated_at: 1715456988
+main_image: argentpur.jpg
 more_content:
   -
     id: 5O0aeyRj

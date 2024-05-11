@@ -1,5 +1,6 @@
 ---
 id: e98fee95-226f-4fe7-a1ed-2f614d3a41f6
+published: false
 blueprint: work
 title: 'Artist website'
 coming_soon: true
